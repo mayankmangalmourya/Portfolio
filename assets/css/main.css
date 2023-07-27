@@ -4968,6 +4968,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (min-width:550px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    article h1{
+        width: 33rem;
+    }
     .header-icons .icon {
         width: 35px;
         height: 35px;
@@ -5086,6 +5093,30 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (min-width:550px) {
+    .line{
+    width: 0px;
+    height: 22rem;
+    border: 1px solid grey;
+    margin-left: .5rem;
+    margin-top: -.3rem;
+}
+    article h1{
+        font-size: 1.2rem;
+        width: 17rem;
+    }
+    article{
+        overflow-x: hidden;
+    }
+
+    .time-role{
+        overflow: hidden;
+    }
+    .role-detail{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
     .contents {
         margin-left: 0;
         width: 48%
@@ -5114,6 +5145,33 @@ body::-webkit-scrollbar-thumb {
     .images-left img {
         float: left
     }
+}
+@media only screen and (min-width:200px) {
+    .line{
+    width: 0px;
+    height: 22rem;
+    border: 1px solid grey;
+    margin-left: .5rem;
+    margin-top: -10rem;
+}
+    article h1{
+        font-size: 1.2rem;
+        width: 17rem;
+    }
+    article{
+        overflow-x: hidden;
+    }
+
+    .time-role{
+        overflow: hidden;
+    }
+    .role-detail{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+   
 }
 
 .project-link {
@@ -5161,6 +5219,106 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
     color: #fff
 }
+
+
+
+
+
+/* article section starts here */
+
+article h1{
+    
+    font-size: 2rem;
+    /* text-align: center; */
+    /* width: 45rem; */
+    /* margin: auto; */
+    margin-bottom: 4rem;
+   
+}
+
+article{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+}
+
+.box{
+   
+   width: 1rem;
+    height: 1rem;
+    border: 3px solid rgb(206, 147, 0);
+    margin-right: 1rem;
+    border-radius: 50%;
+   
+}
+
+.line{
+    width: 0px;
+    height: 22rem;
+    border: 2px solid grey;
+    margin-left: .5rem;
+    margin-top: -.3rem;
+}
+
+.segment-1,.segment-2,.segment-3,.segment-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+   
+  
+}
+
+.segment-2,.segment-4{
+    margin-top: -0.2rem;
+}
+.segment-1,.segment-3{
+    margin-top: -0.4rem;
+}
+body{
+    overflow-x: hidden;
+}
+
+.time-span{
+    padding: .6rem .6rem;
+    background-color: #cfe3f0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+.role{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: rgb(206, 147, 0);
+    font-weight: 600;
+    
+    
+}
+
+.time-role div{
+    margin-left: 1.7rem;
+}
+
+.time-role{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.role-detail{
+    text-align: justify;
+}
+.role-detail p,li{
+   font-size: 1rem;
+}
+
+
 
 
 
