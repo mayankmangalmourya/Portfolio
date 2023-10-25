@@ -4820,6 +4820,19 @@ a img {
     border: 0
 }
 
+body::-webkit-scrollbar {
+  width: .4em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(68, 146, 248);
+  outline: 1px solid rgb(255, 255, 255);
+}
+
 #particles-js {
     background: #1488CC;
     /* fallback for old browsers */
@@ -4836,6 +4849,28 @@ a img {
     background-size: cover;
     background-attachment: fixed
 }
+#particles-js:hover {
+    background: #1488CC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    vertical-align: bottom;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    border-bottom-left-radius: 30%;
+    /* border-radius: 50%; */
+    transition: all 1s;
+
+}
+
 
 #particles-js .particles-js-canvas-el {
     width: 100% !important;
@@ -4851,6 +4886,7 @@ a img {
     width: 80%;
     top: 50%;
     left: 50%;
+    
     margin: 0 auto;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
@@ -4861,6 +4897,7 @@ a img {
     display: block;
     line-height: 1;
     color: #fff;
+    
 }
 
 @media only screen and (min-width:550px) {
@@ -5124,6 +5161,12 @@ a img {
     margin: 0;
     color: #fff
 }
+
+
+
+
+
+
 <<<<<<< HEAD
 
 .Certificates{
