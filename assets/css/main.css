@@ -4865,10 +4865,6 @@ body::-webkit-scrollbar-thumb {
     background-size: cover;
     background-attachment: fixed;
 
-    border-bottom-left-radius: 30%;
-    /* border-radius: 50%; */
-    transition: all 1s;
-
 }
 
 
@@ -5051,14 +5047,14 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 90%;
-    max-width: 960px;
+    width: 100%;
+    max-width: 1960px;
     margin: 0 auto
 }
 
 @media only screen and (min-width:550px) {
     #projects {
-        width: 80%
+        width: 100%
     }
 }
 
@@ -5162,18 +5158,117 @@ body::-webkit-scrollbar-thumb {
     color: #fff
 }
 
+.card-active{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+}
 
+.card{
+    width: 380px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 30px 5px #fcfbf9;
+    color: #063956;
+    background-size: cover;
 
+    img {
+        position: absolute;
+        object-fit: cover;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        transition: opacity .2s ease-out;
+    }
 
+    h2, p, a {
+        position: absolute;
+        opacity: 0;
+        max-width: 85%;
+        transition: opacity .3s ease-out;
+    }
 
+    h2{
+        inset: auto auto 70px 20px;
+    }
 
-<<<<<<< HEAD
+    p {
+        inset: auto auto 80px 30px;
+        background-color: white;
+        width: 90%;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 14px;
+        text-align: center;
+        border-radius: 5px;
+    }
 
-.Certificates{
-    text-align: center;
-    margin: 5px auto
+    p i{
+        font-size: 42px;
+    }
+
+    a {
+        inset: auto auto 40px 30px;
+        color: inherit;
+        text-decoration: none;
+        font-weight: 900;
+    }
+
+    &:hover h2 {
+        opacity: 1;
+        inset: auto auto 160px 30px;
+        transition: opacity .5s .1s ease-in;
+    }
+
+    &:hover p, &:hover a {
+        opacity: 1;
+        transition: opacity .5s .1s ease-in;
+    }
+
+    &:hover img {
+        transition: opacity .3s ease-in;
+        opacity: 0.2;
+    }
 }
 
 
-=======
->>>>>>> 976f365258596a177a3ae74cdf6f0143e971102a
+@media (min-width: 319px) {
+    .card-active{
+        gap: 0px;
+        padding: 0px;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+    .card-active h2{
+        padding-bottom: 60px;
+    }
+    p{
+        margin-bottom: 70px;
+    }
+    a{
+        margin-bottom: 70px;
+    }
+}
+
+@media (min-width: 480px) {
+    .card-active{
+        gap: 0px;
+        padding: 0px;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
