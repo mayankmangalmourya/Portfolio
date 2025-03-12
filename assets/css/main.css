@@ -5252,8 +5252,8 @@ body::-webkit-scrollbar-thumb {
     .card-active h2{
         padding-bottom: 60px;
     }
-    p{
-        margin-bottom: 30px;
+    .card-active p{
+        margin-bottom: 70px;
     }
     a{
         margin-bottom: 70px;
