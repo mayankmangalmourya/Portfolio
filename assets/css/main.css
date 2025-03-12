@@ -5143,7 +5143,7 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(to right, #2B32B2, #1488CC);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px 0;
-    margin-top: 100px;
+    margin-top: 60px;
     text-align: center;
     color: #fff
 }
@@ -5164,7 +5164,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    gap: 20px;
+    gap: 20px ! important;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -5243,7 +5243,6 @@ body::-webkit-scrollbar-thumb {
 
 @media (min-width: 319px) {
     .card-active{
-        gap: 0px;
         padding: 0px;
     }
     .card img {
@@ -5254,7 +5253,7 @@ body::-webkit-scrollbar-thumb {
         padding-bottom: 60px;
     }
     p{
-        margin-bottom: 70px;
+        margin-bottom: 30px;
     }
     a{
         margin-bottom: 70px;
@@ -5263,7 +5262,6 @@ body::-webkit-scrollbar-thumb {
 
 @media (min-width: 480px) {
     .card-active{
-        gap: 0px;
         padding: 0px;
     }
     .card img {
